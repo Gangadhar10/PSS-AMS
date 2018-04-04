@@ -1,0 +1,193 @@
+<!-- <div>Gangadhar</div> -->
+<!-- Nav-->
+
+<!-- Nav END-->
+
+<!-- Breadcrumb-->
+<div class="breadcrumb-bg">
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="../dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="active">AMS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Breadcrumb END-->
+
+<!-- Content Area-->
+<section class="content-section">
+    <div class="container-fluid">
+        <div class="row m-b-10">
+            <div class="col-md-12 col-sm-12">
+                <div class="box p-10">
+
+                    <!-- Search Area Box-->
+                    <div class="search_area form-horizontal">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-5 col-md-5 col-lg-5" for="">Application:</label>
+                                    <div class="col-sm-7 col-md-7 col-lg-7">
+                                        <p-dropdown [options]="Application" [(ngModel)]="selectedCar2" [style]="{'width':'120px'}" filter="true">
+                                            <ng-template let-item pTemplate="selectedItem">
+                                                <span style="vertical-align:middle">{{item.label}}</span>
+                                            </ng-template>
+                                            <ng-template let-car pTemplate="item">
+                                                <div class="ui-helper-clearfix" style="position: relative;height: 25px;">
+
+                                                    <div style="font-size:14px;float:right;margin-top:4px">{{car.label}}</div>
+                                                </div>
+                                            </ng-template>
+                                        </p-dropdown>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-5 col-md-5 col-lg-5" for="">Username:</label>
+                                    <div class="col-sm-7 col-md-7 col-lg-7">
+                                        <p-dropdown [options]="Usernames" [(ngModel)]="selectedCar" [style]="{'width':'120px'}" filter="true">
+                                            <ng-template let-item pTemplate="selectedItem">
+                                                <span style="vertical-align:middle">{{item.label}}</span>
+                                            </ng-template>
+                                            <ng-template let-car pTemplate="item">
+                                                <div class="ui-helper-clearfix" style="position: relative;height: 25px;">
+
+                                                    <div style="font-size:14px;float:right;margin-top:4px">{{car.label}}</div>
+                                                </div>
+                                            </ng-template>
+                                        </p-dropdown>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-5 col-md-4 col-lg-4" for="">From:</label>
+                                    <div class="col-sm-7 col-md-8 col-lg-8 p-lr-0">
+                                        <div class=" input-group input-group-md">
+                                            <div class="input-group">
+                                                <p-calendar [(ngModel)]="date3" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date3|date}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-5 col-md-4 col-lg-4 " for="">To:</label>
+                                    <div class="col-sm-7 col-md-8 col-lg-8 p-lr-0">
+                                        <div class=" input-group input-group-md">
+                                            <div class="input-group date" id="dp3" data-date="12-02-2017" data-date-format="mm-dd-yyyy">
+                                                <p-calendar [(ngModel)]="date3" [showIcon]="true"></p-calendar> <span style="margin-left:35px">{{date3|date}}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6">
+                                <div class="form-group">
+                                    <label class="control-label col-sm-5 col-md-5 col-lg-5" for="">Group:</label>
+                                    <div class="col-sm-7 col-md-7 col-lg-7">
+                                        <select class="form-control">
+                                            <option value="1">Select</option>
+
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-1 col-sm-6">
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn btn-primary active">Query</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Search Area Box END-->
+
+                    <p-dataTable [value]="sales">
+                        <p-headerColumnGroup>
+                            <p-row>
+                                <p-column header="Application"></p-column>
+                                <p-column header="Username"></p-column>
+                                <p-column header="Enabled"></p-column>
+                                <p-column header="Last Login Date"></p-column>
+                                <p-column header="Login Cout"></p-column>
+                                <p-column header="Record Created by"></p-column>
+                                <p-column header="Record Modified by"></p-column>
+                            </p-row>
+                        </p-headerColumnGroup>
+
+                        <p-column field="Application"></p-column>
+                        <p-column field="Username"></p-column>
+                        <p-column field="enabled"></p-column>
+                        <p-column field="Lastlogindate"></p-column>
+                        <p-column field="Logincount"></p-column>
+                        <p-column field="RecordCreatedby"></p-column>
+                        <p-column field="RecordModifiedby"></p-column>
+                    </p-dataTable>
+
+
+                    <div class="row">
+                        <div class="col-lg-6 col-lg-push-6 col-md-5 col-md-push-7">
+                            <div align="right">
+                                <ul class="pagination pagination m-0">
+                                    <li>
+                                        <a href="#">
+                                            <b>Previous</b>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <b>Next</b>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="ams-btns col-lg-6 col-lg-pull-6 col-md-7 col-md-pull-5">
+                            <a class="btn btn-primary btn-sm active m-b-5 col-sm-2 col-xs-12" type="text"(click)="showDialog()"> 
+                                <i class="fa fa-edit"></i> Edit User </a>
+                            <a class="btn btn-primary btn-sm active m-b-5 col-sm-3 col-xs-12">
+                                <i class="fa fa-user"></i> Assume User Role</a>
+                            <a class="btn btn-primary btn-sm active m-b-5 col-sm-3 col-xs-12">
+                                <i class="fa fa-users"></i> Copy Usernames</a>
+                            <a class="btn btn-primary btn-sm active m-b-5 col-sm-3 col-xs-12" data-toggle="modal" data-target="#CreateNewUser">
+                                <i class="fa fa-plus"></i> Create New User</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Content Area END-->
+
+<!-- User Creation	PopUp -->
+<p-dialog header="Title" [(visible)]="display" showEffect="fade" modal="modal">
+    Gangadhar
+</p-dialog>

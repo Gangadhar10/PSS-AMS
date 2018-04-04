@@ -1,0 +1,275 @@
+<!-- <h1>
+  editplant works!
+</h1> -->
+
+  <!-- Breadcrumb-->
+  <div class="breadcrumb-bg">
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="breadcrumb">
+              <li>
+                <a href="dashboard.html">Home</a>
+              </li>
+              <li>
+                <a href="ams.html">AMS</a>
+              </li>
+              <li class="active">Plants</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- Breadcrumb END-->
+
+  <!-- Content Area-->
+  <section class="content-section">
+    <div class="container-fluid">
+      <div class="row m-b-10">
+        <div class="col-md-12 col-sm-12">
+          <div class="box p-10">
+
+            <!-- Search Area Box-->
+            <div class="search_area">
+              <h4>
+                Plants
+              </h4>
+
+            </div>
+
+            <!-- Search Area Box END-->
+
+            <div id="no-more-tables">
+              <table class="table table-bordered table-striped table-condensed  table-hover">
+                <thead>
+                  <tr>
+                    <th>Plant ID</th>
+                    <th>Description</th>
+                    <th>Division</th>
+                    <th>Active</th>
+
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-title="Plant ID ">CA10</td>
+                    <td data-title="Description">Prescott</td>
+                    <td data-title="Division">ED</td>
+                    <td data-title="Active">
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Plant ID ">US10</td>
+                    <td data-title="Description">Abbellive</td>
+                    <td data-title="Division">ED</td>
+                    <td data-title="Active">
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Plant ID ">US80</td>
+                    <td data-title="Description">Prescott</td>
+                    <td data-title="Division">CD</td>
+                    <td data-title="Active">
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Plant ID ">PL10</td>
+                    <td data-title="Description">Clearmont</td>
+                    <td data-title="Division">ED</td>
+                    <td data-title="Active">
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-title="Plant ID ">PL60</td>
+                    <td data-title="Description">Prescott</td>
+                    <td data-title="Division">CD</td>
+                    <td data-title="Active">
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <button class="btn btn-primary btn-sm active">
+                  <i class="fa fa-edit"></i> Edit Selected </button> &nbsp;
+                <button class="btn btn-primary btn-sm active">
+                  <i class="fa fa-plus"></i> Add</button> &nbsp;
+                <button class="btn btn-success btn-sm active">
+                  <i class="fa fa-save"></i> Save</button>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+
+<!-- 
+  </div>
+  </section> -->
+  <!-- Content Area END-->
+
+  <footer class="sticky-footer">
+    <section>
+      <div class="container-fluid ">
+        <div class="text-center">Prysmian Group. All rights reserved. Copyright © 2018. </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- User Creation	PopUp -->
+  <div class="modal fade" id="CreateNewUser" tabindex="-1" role="dialog" aria-labelledby="PSS Apps">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 class="modal-title">
+            <i class="fa fa-user"></i> User Creation</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="form-group">
+                <label for="Pulse ID">Pulse ID :</label>
+                <input type="text" class="form-control" id="Pulse ID" placeholder="enter here">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label class="control-label" for="">&nbsp;</label>
+                <div class=" form-group">
+                  <button class="btn btn-primary btn-md active" data-toggle="modal" data-target="#GetAdData">Get AD Data</button>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-12 m-t-40 m-b-40">&nbsp;</div>
+          </div>
+
+          <div align="right" class="m-t-20">
+            <button class="btn btn-primary btn-md active">
+              <i class="fa fa-plus"></i> Create New User</button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- User Creation	PopUp END-->
+
+  <!-- Select User (GetAdData) PopUp -->
+  <div class="modal fade" id="GetAdData" tabindex="-1" role="dialog" aria-labelledby="PSS Apps">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 class="modal-title">
+            <i class="fa fa-user"></i> Select User</h4>
+        </div>
+        <div class="modal-body">
+
+          <div id="no-more-tables">
+            <table class="table table-bordered table-striped table-condensed table-hover	">
+              <thead>
+                <tr>
+                  <th>Pulse ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Location</th>
+                  <th>Phone Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-title="Pulse ID">corpema001</td>
+                  <td data-title="First Name">Mary</td>
+                  <td data-title="Last Name">Corpening</td>
+                  <td data-title="Location">Claremont</td>
+                  <td data-title="Phone Number">+1 828-459-1234</td>
+                </tr>
+                <tr>
+                  <td data-title="Pulse ID">corbin001</td>
+                  <td data-title="First Name">Corb</td>
+                  <td data-title="Last Name">Fracis</td>
+                  <td data-title="Location">Claremont</td>
+                  <td data-title="Phone Number">+1 888-626-2656</td>
+                </tr>
+                <tr>
+                  <td data-title="Pulse ID">corpema001</td>
+                  <td data-title="First Name">Mary</td>
+                  <td data-title="Last Name">Corpening</td>
+                  <td data-title="Location">Claremont</td>
+                  <td data-title="Phone Number">+1 828-459-1234</td>
+                </tr>
+                <tr>
+                  <td data-title="Pulse ID">corbin001</td>
+                  <td data-title="First Name">Corb</td>
+                  <td data-title="Last Name">Fracis</td>
+                  <td data-title="Location">Claremont</td>
+                  <td data-title="Phone Number">+1 888-626-2656</td>
+                </tr>
+                <tr>
+                  <td data-title="Pulse ID">corpema001</td>
+                  <td data-title="First Name">Mary</td>
+                  <td data-title="Last Name">Corpening</td>
+                  <td data-title="Location">Claremont</td>
+                  <td data-title="Phone Number">+1 828-459-1234</td>
+                </tr>
+                <tr>
+                  <td data-title="Pulse ID">corbin001</td>
+                  <td data-title="First Name">Corb</td>
+                  <td data-title="Last Name">Fracis</td>
+                  <td data-title="Location">Claremont</td>
+                  <td data-title="Phone Number">+1 888-626-2656</td>
+                </tr>
+                <tr>
+                  <td data-title="Pulse ID">corpema001</td>
+                  <td data-title="First Name">Mary</td>
+                  <td data-title="Last Name">Corpening</td>
+                  <td data-title="Location">Claremont</td>
+                  <td data-title="Phone Number">+1 828-459-1234</td>
+                </tr>
+                <tr>
+                  <td data-title="Pulse ID">corbin001</td>
+                  <td data-title="First Name">Corb</td>
+                  <td data-title="Last Name">Fracis</td>
+                  <td data-title="Location">Claremont</td>
+                  <td data-title="Phone Number">+1 888-626-2656</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div align="right" class="m-t-20">
+            <button class="btn btn-success btn-md active">
+              <i class="fa fa-check"></i> Continue</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+

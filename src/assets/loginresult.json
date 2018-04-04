@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "user": [
+    {
+      "UserID": "corbifr001",
+      "FirstName": "Francis",
+      "LastName": "Corbin",
+      "EmailAddress": "francis.corbin@prysmiangroup.com",
+      "GroupID": null,
+      "GroupShortDescription": null,
+      "DisplayName": "Corbin Francis"
+    }
+  ],
+  "applications": [
+    {
+      "ApplicationName": "AMS",
+      "ShortDescription": "Autorization Management System",
+      "LongDescription": "Manage users and roles for the applications of the PSS",
+      "ApplicationURL": "\/\/APP683-32US\/NA\/PSS\/AMS",
+      "IconClass": "fa fa-tasks",
+      "StatusID": 1,
+      "StatusDescription": "Active"
+    },
+    {
+      "ApplicationName": "CLS",
+      "ShortDescription": "Compound Logging System",
+      "LongDescription": "Track compound usage and provide feedback for engineering and mainteneance",
+      "ApplicationURL": "\/\/APP683-32US\/NA\/PSS\/CLS",
+      "IconClass": "fa fa-tasks",
+      "StatusID": 1,
+      "StatusDescription": "Active"
+    },
+    {
+      "ApplicationName": "RCC",
+      "ShortDescription": "Request for Customer Concession",
+      "LongDescription": "Track request for customers to accept non-conforming products",
+      "ApplicationURL": "\/\/APP683-32US\/NA\/PSS\/RCC",
+      "IconClass": "fa fa-tasks",
+      "StatusID": 1,
+      "StatusDescription": "Active"
+    }
+  ]
+}
